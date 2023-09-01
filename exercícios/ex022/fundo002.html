@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalização dos Fundos</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100vh;
+      }
+
+      .caixa-conteudo {
+        width: 1000px;
+        height: 200px;
+        background-size: 50px 100px;
+        border: 2px solid black;
+        background-image: url("https://img.freepik.com/vetores-premium/mascote-de-urso-com-varios-bola-esporte_9645-60.jpg");
+      }
+
+      #repeat {
+        background-repeat: repeat;
+      }
+
+      #no-repeat {
+        background-repeat: no-repeat;
+      }
+
+      #repeat-x {
+        background-repeat: repeat-x;
+      }
+      #repeat-y {
+        background-repeat: repeat-y;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Imagem com a Propriedade Repeat</h2>
+    <p>
+      Ocorre a repetição da imagem dentro de uma div ou em qualquer outro lugar
+      onde foi inserida
+    </p>
+    <div class="caixa-conteudo" id="repeat"></div>
+    <br />
+    <h2>Imagem com a Propriedade No-Repeat</h2>
+    <p>Não Ocorre a repetição da imagem</p>
+    <div class="caixa-conteudo" id="no-repeat"></div>
+    <br />
+    <h2>Imagem com a Propriedade Repeat-x</h2>
+    <p>Repetição da imagem somente no eixo "x" (horizontal)</p>
+    <div class="caixa-conteudo" id="repeat-x"></div>
+    <br />
+    <h2>Imagem com a Propriedade Repeat-y</h2>
+    <p>Repetição da imagem somente no eixo "y" (vertical)</p>
+    <div class="caixa-conteudo" id="repeat-y"></div>
+  </body>
+</html>

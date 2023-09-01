@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+       
+        *{
+            margin: 0;
+            padding: 0;
+            background-color: #ccc;
+        }
+        h1{
+            background-color: blue;
+            text-align: center;
+            color: white;
+            padding: 20px;
+        }
+        h2{
+            margin-top: 10px;
+            padding: 20px;
+            text-decoration: underline;
+        }
+        p{
+            width: 600px;
+            margin-bottom: 0;
+            margin-left: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            padding: 8px;
+            
+        }
+        ol{
+            color: azure;
+            
+            margin-left: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 3px;
+        }
+         ul{
+            color: azure;
+            margin-left: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 3px;
+        }
+       
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .lista1{
+            margin-top: 10px;
+            padding: 5px;
+            width: 650px;
+            margin-left: 10px;
+            border: 1px solid;
+            box-shadow: 5px 5px 5px #ccc;
+        }
+        .lista2{
+            margin-top: 10px;
+            padding: 5px;
+            width: 650px;
+            margin-left: 10px;
+            border: 1px solid;
+            box-shadow: 5px 5px 5px #ccc;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+   
+    <div class="container">
+        <div class="lista1">
+        <h2>Listas Ordenadas</h2>
+        <p>Lista com Numeração Normal</p>
+    <ol type="1">
+        <li>Acordar</li>
+        <li>Ligar para João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os Dentes</li>
+        <li>Ir para a Faculdade</li>
+        <li>Jantar</li>
+        <li>Dormir</li><br>
+    </ol>
+    <p>Lista com Letras Maiúsculas ordenando a Sequência</p>
+     <ol type="A">
+        <li>Acordar</li>
+        <li>Ligar para João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os Dentes</li><br>
+    </ol>
+    <p>Lista com Letras Minúsculas ordenando a Sequência</p>
+     <ol type="a">
+        <li>Acordar</li>
+        <li>Ligar para João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os Dentes</li><br>
+    </ol>
+    <p>Lista com Numeração Romana Maiúscula ordenando a Sequência</p>
+     <ol type="I">
+        <li>Acordar</li>
+        <li>Ligar para João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os Dentes</li><br>
+    </ol>
+    <p>Lista com Numeração Romana Minúscula ordenando a Sequência</p>
+     <ol type="i">
+        <li>Acordar</li>
+        <li>Ligar para João</li>
+        <li>Tomar Café</li>
+        <li>Escovar os Dentes</li><br>
+    </ol>
+        </div>
+    <div class="lista2">
+        <h2>Listas Não Ordenadas</h2>
+    <p>Listas sem ordem correta das coisas Utilizando o TYPE 'disk'</p>
+    <ul>
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li><br>
+    </ul>
+     <p>Listas sem ordem correta das coisas Utilizando o TYPE 'circle'</p>
+    <ul type="circle">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li><br>
+    </ul>
+     <p>Listas sem ordem correta das coisas Utilizando o TYPE 'square'</p>
+    <ul type="square">
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Manteiga</li>
+        <li>Arroz</li>
+        <li>Feijão</li><br>
+    </ul>
+    </div>
+    </div>
+
+    <h2>Minhas linguagens Favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>PHP</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+            <li>Python</li>
+        </ol>
+    </ol>
+    <h2>Meus Vídeos-games favoritos</h2>
+    <ul type="square">
+        <li>Playstation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <ul type="square">
+                <li>Final Fantasy XIV</li>
+                <li>Final Fantasy XV</li>
+            </ul>
+            <li>League of Legends</li>
+            <li>Resident Evil</li>
+            <ul type="circle">
+                <li>Resident Evil</li>
+                <li>Resident Evil 2</li>
+                <li>Resident Evil 3</li>
+                <li>Resident Evil 4</li>
+            </ul>
+            <li>League of Legends</li>
+
+        </ul type="square">
+        <li>Xbox</li>
+
+    </ul>
+    <h2>Lista de Definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de Programação para a criação de interatividade de um site</dd>
+    </dl>
+</body>
+</html>

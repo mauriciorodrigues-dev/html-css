@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: normal 16px arial;
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    background: rgba(0, 162, 255, 0.507);
+}
+
+h1, h2,h3,p{
+    margin: 10px;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: left;
+}
+
+p{
+    text-align: justify;
+    text-indent: 2rem;
+}
+
+.container{
+    background-color: #faf8f8;
+    height: 95vh;
+    border-radius: 10px;
+}

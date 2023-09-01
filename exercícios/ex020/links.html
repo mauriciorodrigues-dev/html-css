@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+      }
+
+      .links-um {
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          text-decoration: underline;
+          color: black;
+        }
+      }
+
+      .links-um:visited {
+        color: darkred;
+      }
+
+      .links-um:active {
+        color: aqua;
+      }
+
+      .links-um::after {
+        content: " ♯";
+        color: #777;
+      }
+
+      /* listas personalizadas */
+      .container{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        /* height: 400px; */
+        border: 1px solid;
+
+      }
+
+
+      #lista-person li {
+        margin-right: 10px;
+        list-style: none;
+        padding: 25px;
+        /* background-color: #666; */
+        width: 100%;
+        border: 1px solid;
+      }
+
+      #lista-person li a {
+        color: #000000;
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+    
+      }
+
+      #lista-person li:first-child {
+        background-color: #5baa73;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      #lista-person li:last-child {
+        background-color: #0358f7;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      #lista-person li:nth-child(3) {
+        background-color: #9ca569;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personalizando Links</h1>
+    <ul>
+      <li>
+        <a href="https://gustavoguanabara.github.io" class="links-um"
+          >Repositório Github</a
+        >
+      </li>
+      <li>
+        <a href="https://youtube.com/cursoemvideo" class="links-um"
+          >Canal do Youtube</a
+        >
+      </li>
+      <li>
+        <a href="https://www.cursoemvideo.com" class="links-um"
+          >Site do Curso em Vídeo</a
+        >
+      </li>
+    </ul>
+    <h1>Personalizando Listas</h1>
+    <div class="container">
+      <ul id="lista-person">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Consultas</a></li>
+        <li><a href="#">Configurações</a></li>
+        <li><a href="#">Abrir Vendas</a></li>
+        <li><a href="#">Dashboard</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

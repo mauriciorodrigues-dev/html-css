@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            width: 1200px;
+            height: 100vh;
+            margin: auto;
+            border: 1px dashed #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .img{
+            width: 400px;
+            height: 200px;
+            border: 1px dashed #ccc;
+            background-image: url('https://gustavoguanabara.github.io/javascript/imagens/mascote.png');
+            background-size: 50px;
+            background-repeat: no-repeat;
+        }
+
+        #img-2{
+            background-position: bottom right;
+        }
+        #img-3{
+            background-position: center center;
+        }
+        #img-4{
+            background-position: left center;
+        }
+        #img-5{
+            background-position: left bottom;
+        }
+
+      
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="img">Left-Top position</div>
+        <div class="img" id="img-2">Right-Bottom position</div>
+        <div class="img" id="img-3">Center-Center position</div>
+        <div class="img" id="img-4">Left-Center position</div>
+        <div class="img" id="img-5">Left-bottom position</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+body{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h1{
+    background-color: #444;
+    text-align: center;
+    height: 300px;
+    width: 30%;
+    color: #fff;
+    border: 1px solid red;
+    margin: auto;
+
+}
+
+
+p{
+    color: #444;
+    text-align: center;
+}
+
+a{
+    color: #070707;
+    text-decoration: none;
+   
+}
