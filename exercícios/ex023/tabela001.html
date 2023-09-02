@@ -12,11 +12,12 @@
 
         .tabela{
             display: flex;
-            width: 40vw;
-            /* border: 1px solid; */
+            max-width: 80vw;
+            border: 1px solid;
             justify-content: space-between;
             align-items: center;
             padding: 50px;
+            margin-right: 10px;
         }
 
         .tabela img{
@@ -25,7 +26,7 @@
 
         table{
             width: 300px;
-            text-align: center;
+            height: 300px;
             border-collapse: collapse;
         }
 
@@ -36,6 +37,12 @@
         td{
             border: 1px solid #000000;
             padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .numero{
+            text-align: right;
         }
         
 
@@ -61,19 +68,51 @@
                 <tr class="linha">
                     <td>A2</td>
                     <td>B2</td>
-                    <td>C2</td>
+                    <td class="numero">C2</td>
                 </tr>
                 <tr>
                     <td>A3</td>
                     <td>B3</td>
-                    <td>C3</td>
+                    <td class="numero">C3</td>
                 </tr>
                 <tr class="linha">
                     <td>A4</td>
                     <td>B4</td>
-                    <td>C4</td>
+                    <td class="numero">C4</td>
                 </tr>
              </table>
+         </div>
+         <div>
+            <table>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                    <td>J</td>
+                </tr>
+                <tr>
+                    <td>K</td>
+                    <td>L</td>
+                    <td>M</td>
+                    <td>N</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td>Q</td>
+                    <td>R</td>
+                    <td>S</td>
+                    <td>T</td>
+                </tr>
+            </table>
          </div>
          <img src="img/tabela.png" alt="">
      </div>
