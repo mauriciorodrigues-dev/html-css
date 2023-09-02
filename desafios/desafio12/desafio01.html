@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio UM</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        h1{
+            background-color: black;
+            padding: 20px;
+            color: #fff;
+        }
+
+
+        table{
+            width: 400px;
+            border: 1px solid;
+            text-align: center;
+            margin: 10px;
+            box-shadow: 1px 1px 6px grey;
+            height: 300px;
+        }
+
+        td{
+            border: 1px solid;
+            padding: 10px;
+            &:hover{
+                background-color: yellow;
+                /* font-weight: bold; */
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio UM - Curso em Vídeo</h1>
+    <div class="container">
+        
+    <div>
+            
+            <h2>Tabela Numerada</h2>
+            <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <!-- <td>6</td>
+            <td>7</td> -->
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+            </table>
+    </div>
+    <div>
+   
+    </div>
+</div>
+</body>
+</html>
