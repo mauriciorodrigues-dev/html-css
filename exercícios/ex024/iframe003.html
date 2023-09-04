@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do Iframe</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            width: 1200px;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 10vh;
+            position: relative;
+          
+        }
+
+        header::before{
+            content: '';
+            background-image: url('https://portalwp.s3.amazonaws.com/wp-content/uploads/20190129161224/Fotolia_109969001_Subscription_Monthly_M.jpg');
+            background-position: center;
+            background-size: cover;
+            opacity: .4;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            filter: blur(3px);
+            border-radius: 1rem;
+
+        }
+
+        p{
+            text-align: justify;
+            text-indent: 1em;
+        }
+
+        iframe{
+            width: 95%;
+            border: 1px solid;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Faça uma escolha</h1>
+    </header>
+    <div class="container">
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos rem ullam, vero perferendis ratione omnis esse quo voluptate assumenda eligendi, totam quasi nostrum quia tempore neque asperiores quaerat consequatur modi accusamus, veritatis sapiente! Totam, omnis? Doloremque dignissimos neque repellendus incidunt. Ex itaque reprehenderit vel inventore praesentium cumque sed magni placeat doloribus dicta illum quis amet, commodi repudiandae! Laudantium cum libero facilis dolor omnis placeat unde nobis officia? Explicabo labore, dolores nesciunt illo voluptatem fugiat quibusdam quod ullam tempora enim distinctio dignissimos incidunt vel officiis voluptatum nostrum minima consequatur tempore! Libero nesciunt deleniti laudantium earum tempora ratione consectetur nemo temporibus exercitationem?
+        </p>
+            <ul>
+                <li><a href="paginas-extras/pagina001.html" target="frame">Primeira Página</a></li>
+                <li><a href="paginas-extras/pagina002.html" target="frame">Segunda Página</a></li>
+                <li><a href="paginas-extras/pagina003.html" target="frame">Terceira Página</a></li>
+            </ul>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et neque architecto eius itaque? In modi sunt fuga dolorum aut aliquid ex quasi quaerat illo. Tempore illo eaque fugit itaque eum laboriosam perspiciatis reiciendis iusto hic suscipit doloribus maxime deleniti, quis magnam voluptatibus natus eius est adipisci esse in praesentium aut quidem facere repellendus. Debitis voluptates minus soluta officiis, in praesentium neque? Consequatur quibusdam sapiente necessitatibus debitis, quasi neque, consectetur amet sequi laudantium, doloribus enim libero esse sit quia mollitia! Assumenda repellendus at, sit voluptatum repudiandae sunt dicta, molestiae officiis tempora praesentium omnis perferendis temporibus, tenetur iusto veritatis! Vitae, est sed.
+        </p>
+        <iframe src="" frameborder="1" name="frame" srcdoc="<img src='img/escolha.png' >">
+            <p>Infelizmente seu navegador não é compatível.</p>
+        </iframe>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ea ipsum minima velit tempora, omnis deserunt excepturi illo similique reiciendis tempore illum tenetur nemo libero et maiores quas reprehenderit suscipit quaerat commodi debitis incidunt soluta sequi aliquam. Laboriosam, itaque. Cumque, fugit magni iste saepe voluptas accusantium totam ratione adipisci aperiam tempora quam modi doloribus tenetur distinctio tempore provident sit facere. Dolore tenetur, commodi expedita veritatis maiores quos itaque, corrupti aliquam distinctio, accusantium molestias iste architecto? Eum suscipit pariatur nobis itaque sint fugiat dicta possimus exercitationem consequatur perferendis cum, aliquam id, error obcaecati non quidem sunt nihil reprehenderit quibusdam blanditiis quia.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, harum debitis quibusdam vel officia numquam iure optio incidunt obcaecati reiciendis. Voluptate recusandae quibusdam, veniam facilis debitis earum saepe perspiciatis assumenda id eveniet soluta voluptates, blanditiis nam ex! Accusantium, illo architecto dignissimos voluptates temporibus reiciendis unde nihil molestiae libero, distinctio, modi sit sequi ducimus nesciunt dolore ipsa! Animi iure quis commodi saepe rerum blanditiis recusandae obcaecati libero suscipit voluptates. Ex maiores obcaecati ab praesentium natus reprehenderit assumenda temporibus quo deserunt odio. Illum sunt possimus aut asperiores fuga, odit recusandae dolor hic laboriosam quis ratione. Tempore nemo ut, voluptates necessitatibus saepe cum!
+        </p>
+    </div>
+</body>
+</html>
