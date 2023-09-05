@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+      }
+      body {
+        background: black;
+        color: #fff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      header {
+        background-image: linear-gradient(to bottom, rgb(0, 0, 0), #ffffff5d);
+        filter: blur(1px);
+      }
+
+      .container-header {
+        padding: 30px;
+        text-align: center;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+
+      main{
+        width: 1200px;
+        height: 100vh;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container-header">
+        <h1>Meu Primeiro Formulário</h1>
+      </div>
+    </header>
+    <main>
+      <form action="cadastro.php" method="post" autocomplete="off">
+        
+          <label for="inome">
+            Nome: <input type="text" name="nome" id="inome" />
+          </label>
+        
+        
+          <label for="isobrenome">
+            Sobrenome: <input type="text" name="Sobrenome" id="isobrenome" />
+          </label>
+        
+        <p>
+            <input type="submit" value="Cadastrar" />
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
