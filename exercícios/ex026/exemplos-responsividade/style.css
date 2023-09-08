@@ -49,7 +49,17 @@ main {
     flex-flow: row wrap;
 }
 
-@media screen and (max-width: 700px) {
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
     nav {
         flex-direction: column;
     }
