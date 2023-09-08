@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: green;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+nav {
+    justify-content: center;
+    /* padding: 10px; */
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    padding: 14px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+article {
+    flex: 48%;
+    /* flex-grow: 1; */
+    text-indent: 2rem;
+    text-align: justify;
+    padding: 1rem;
+    background-color: #ccc;
+    margin: 1%;
+    height: 50vh;
+    display: flex;
+    
+}
+
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@media screen and (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    main {
+        width: 100%;
+    }
+    
+}
