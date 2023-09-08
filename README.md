@@ -16,3 +16,6 @@ Estou aprendendo a criar sites e agora vou gerenciar repositórios
 <a href="https://mauriciorodrigues-dev.github.io/projeto-cordel/">Cordel</a>
 
 
+<a href="https://mauriciorodrigues-dev.github.io/html-css//exerc%C3%ADcios/ex026/mr004/index.html">Vários tipos de mídia</a>
+
+
