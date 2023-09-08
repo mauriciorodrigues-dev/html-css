@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="estilos/media-query.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="estilos/style.css" />
   </head>
-  <body>
+  <body onresize="mudouTamanho()">
     <header>
       <h1>Meu Site</h1>
       <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()"
@@ -26,7 +27,7 @@
         </ul>
       </menu>
     </header>
-    <main>
+    <main id="principal">
       <article>
         <h2>Testanto Media Query</h2>
         <p>
@@ -45,7 +46,6 @@
           laboriosam molestias voluptatem. Inventore porro nam ullam nesciunt
           neque. Distinctio veniam pariatur corporis doloremque. Est similique
           qui quaerat rem at, pariatur cupiditate, quidem minima facere ullam
-         
         </p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
@@ -63,17 +63,26 @@
           laboriosam molestias voluptatem. Inventore porro nam ullam nesciunt
           neque. Distinctio veniam pariatur corporis doloremque. Est similique
           qui quaerat rem at, pariatur cupiditate, quidem minima facere ullam
-          
         </p>
       </article>
     </main>
     <script>
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
+        }
+      }
+
       function clickMenu() {
-            if (itens.style.display =='block'){
-                itens.style.display='none'
-            } else{
-                itens.style.display='block'
-            }
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+
+
       }
     </script>
   </body>
