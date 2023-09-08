@@ -1,0 +1,95 @@
+/* Para todas as mídias */
+
+@media print { /*Impressão*/
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background: url(../img/back-print.jpg);
+              
+        
+    }
+
+    #phone,
+    #tablet,
+    #print,
+    #pc,
+    #tv {
+        display: none;
+    }
+
+    #print {
+        display: block;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media  screen and (min-width: 768px) and (max-width: 992px) { /*Tablet*/
+    body {
+        background: url(../img/back-tablet.jpg);
+        
+    }
+
+    #phone,
+    #tablet,
+    #print,
+    #pc,
+    #tv {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media  screen and (min-width: 992px) and (max-width: 2200px) { /*Desktop*/
+    body {
+        background: url(../img/back-pc.jpg);
+    }
+
+    #phone,
+    #tablet,
+    #print,
+    #pc,
+    #tv {
+        display: none;
+    }
+
+    #pc {
+        display: block;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media  screen and (min-width: 2200px) { /*Grandes Telas*/
+    body {
+        background: url(../img/back-tv.jpg);
+    }
+
+    #phone,
+    #tablet,
+    #print,
+    #pc,
+    #tv {
+        display: none;
+    }
+
+    #tv {
+        display: block;
+    }
+}
