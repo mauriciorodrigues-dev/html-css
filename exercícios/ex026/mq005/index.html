@@ -10,6 +10,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="estilos/style.css" />
+    <script>
+      
+    </script>
   </head>
   <body onresize="mudouTamanho()">
     <header>
@@ -66,7 +69,7 @@
         </p>
       </article>
     </main>
-    <script>
+    <script defer>
       function mudouTamanho() {
         if (window.innerWidth >= 768) {
           itens.style.display = "block";
@@ -81,9 +84,11 @@
         } else {
           itens.style.display = "block";
         }
-
-
       }
+
+      window.alert(
+        "É uma página teste!!! Estou aprendendo ainda! Maas obrigado por acessar! Você mora no meu s2"
+      );
     </script>
   </body>
 </html>
